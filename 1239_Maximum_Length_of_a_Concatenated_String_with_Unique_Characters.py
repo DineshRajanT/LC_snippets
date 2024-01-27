@@ -3,6 +3,8 @@ from typing import List, Set
 
 class Solution:
     def maxLength(self, arr: List[str]) -> int:
+        # T: O(2^n)
+        # S: O(n)
 
         def backtracking(i: int, charSet: Set[str]) -> int:
             if i == len(arr):
